@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>I.R.S Technology</title>
+	 <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+.logo {
+    font-size: 2rem;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 550px;
+}
+
+.menu li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+}
+.menu li a:hover{
+	color: #f30a2d; /* blue */
+	border-color: #f30a2d; /* blue */
+}
+@media all and (max-width: 991px) {
+
+    header {
+        background: transparent;
+    }
+
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 20;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .fermer {
+        display: none;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+	 .open .menu {
+        transform: translateX(0);
+    }
+	}
+</style>
+<body>
+
+    <center><div class="home">
+		<br><br><br>
+		<img src="images/logo.svg" alt=""><br><br>
+		<h2>A history of everything you copy</h2><br>
+        <p>Clipboard you to track and organize everything you copy instantly access your clipboard on all your device</p><br>
+		<button class="left-btn">Download for IOS</button>
+		<button class="right-btn">Download for Mac</button>
+	</div></center>
+
+	<div class="div2">
+		<center><h2>Keep track of your snippets</h2><br>
+        <p>clipboard instantly any item you copy in the cloud, meaning you can acces your snippets immediately on all your devices. Our Mac and Ios apps will help you organize everything</p></center><br>
+		<div class="grid">
+			<img src="images/image-computer.png" alt="">
+			<div class="paragraph">
+				<div class="parag">
+					<h3>Quick Search</h3>
+				    <p>easily search your snippets by content category. web adress, application, and more</p>
+				</div>
+				<div class="parag">
+					<h3>iCloud Sync</h3>
+				    <p>instantly saves and syncs snippets across all your devices.</p>
+				</div>
+				<div class="parag">
+					<h3>Complete History</h3>
+				    <p>Retrieve any snippets from moment you started using the app</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<center><div class="div3">
+		<h2>Access Clipboard anywhere</h2><br>
+        <p>Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks</p><br>
+		<img src="images/image-devices.png" alt=""><br><br>
+	</div></center>
+	
+	<div class="card">
+		<center><h2>Supercharge your workflow</h2>
+		<p>We've got the tools to boost your productivity</p></center>
+		<div class="articles">
+			<article>
+			  <div class="article-wrapper">
+				<figure>
+				  <center><img src="images/icon-blacklist.svg" alt="" /></center>
+				</figure>
+				<center><div class="article-body">
+				  <h2>Create blacklists</h2><br>
+				  <p>
+					Ensure sensitive information never makes its way to your clipboard by excluding certain sources. 
+				  </p>
+				</div>
+			  </div></center>
+			</article>
+		
+			<article>
+				<div class="article-wrapper">
+				  <figure>
+					<center><img src="images/icon-text.svg" alt="" /></center>
+				  </figure>
+				  <center><div class="article-body">
+					<h2>Plain text snippets</h2><br>
+					<p>
+					  Remove unwanted formatting from copied text for a consistent look.
+					</p>
+				  </div>
+				</div></center>
+			  </article>
+	
+			<article>
+			  <div class="article-wrapper">
+				<figure>
+				  <center><img src="images/icon-preview.svg" alt="" /></center>
+				</figure>
+				<center><div class="article-body">
+				  <h2>Sneak preview</h2><br>
+				  <p>
+					Quick preview of all snippets on your Clipboard for easy access.
+				  </p>
+				</div>
+			  </div></center>
+			</article>
+		</div>
+	</div>
+
+	<div class="articles" id="articles">
+		<article>
+		  <div class="article-wrapper">
+			<figure>
+			  <center><img src="images/logo-google.png" alt="" /></center>
+			</figure>
+		</article>
+	
+		<article>
+			<div class="article-wrapper">
+			  <figure>
+				<center><img src="images/logo-ibm.png" alt="" /></center>
+			  </figure>
+		  </article>
+
+		<article>
+		  <div class="article-wrapper">
+			<figure>
+			  <center><img src="images/logo-microsoft.png" alt="" /></center>
+			</figure>
+		</article>
+
+		<article>
+			<div class="article-wrapper">
+			  <figure>
+				<center><img src="images/logo-hp.png" alt="" /></center>
+			  </figure>
+		</article>
+
+		<article>
+			<div class="article-wrapper">
+			  <figure>
+				<center><img src="images/logo-vector-graphics.png" alt="" /></center>
+			  </figure>
+		</article>
+	</div>
+
+	<center><div class="div5">
+		<h2>Clipboard for iOS and Mac OS</h2><br>
+        <p>Available for free on the App Store Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard</p><br>
+		<button class="left-btn">Download for IOS</button>
+		<button class="right-btn">Download for Mac</button>
+	</div></center>
+
+</div>
+
+	<div class="footer">
+		<div class="img-logo">
+			<img src="images/logo.svg" alt="" height="60px">
+		</div>
+		<div class="link1" style="justify-content: start;">
+			<a href="#">FAQs</a><br><br>
+			<a href="#">Contact Us</a>
+		</div>
+		<div class="link2">
+			<a href="#">Privacy Policy</a><br><br>
+			<a href="#">Press Kit</a>
+		</div>
+		<div class="link3">
+			<a href="#">Install Guide</a>
+		</div>
+		<div class="media">
+			<i class="fa-brands fa-square-facebook"></i>
+			<i class="fa-brands fa-twitter"></i>
+			<i class="fa-brands fa-instagram"></i>
+		</div>
+	</div>
+</body>
+</html>
